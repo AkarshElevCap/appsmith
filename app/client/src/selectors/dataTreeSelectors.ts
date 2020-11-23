@@ -36,6 +36,9 @@ export const getUnevaluatedDataTree = createSelector(
 export const getOldUnevaluatedDataTree = (state: AppState) =>
   state.evaluations.tree.unevaluated;
 
+export const getEvaluationDependencies = (state: AppState) =>
+  state.evaluations.dependencies;
+
 export const getDataTree = (state: AppState) =>
   state.evaluations.tree.evaluated;
 
